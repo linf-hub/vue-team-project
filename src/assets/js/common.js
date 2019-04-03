@@ -5,9 +5,14 @@ let VPCF = function() {
 }
 
 VPCF.prototype = {
-    foo() {
-        console.log('hey')
+    isRequired() {
+        throw new Error('参数未填写')
+    },
+    // 解构赋值函数默认值
+    foo(args = this.isRequired()) {
+        console.log(args);
     }
+
 }
 
 let vpcf = new VPCF();

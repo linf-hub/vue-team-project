@@ -5,10 +5,16 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-
+    loginMsg: {
+      username: '',
+      password: '',
+      token: ''
+    }
   },
   mutations: {
-
+    SET_LOGINMSG(state,loginMsg) {
+      state.loginMsg = loginMsg;
+    }
   },
   actions: {
 

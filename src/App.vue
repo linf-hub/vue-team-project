@@ -2,11 +2,38 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <span @click="login">About</span>
     </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+  export default {
+    data() {
+      return {
+        loginMsg: {
+          username: '',
+          password: '',
+          token: ''
+        }
+      }
+    },
+    methods: {
+      login() {
+        this.loginMsg = {
+          username: 'abc',
+          password: 'def',
+          token: 'ghi'
+        };
+        this.$store.commit('SET_LOGINMSG', this.loginMsg);
+        this.$router.push({
+          path: "/about"
+        })
+      }
+    }
+  }
+</script>
 
 <style lang="scss">
 #app {
