@@ -16,6 +16,7 @@ export default {
   },
   mounted() {
     this.$VPCF.foo();
+    console.log('是否执行');
   }
 }
 </script>

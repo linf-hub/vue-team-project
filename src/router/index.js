@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '../views/Home.vue'
 
-import about from './about'
+// import about from './about'
 
 Vue.use(Router);
 
@@ -14,6 +14,6 @@ export default new Router({
       component: Home
     }, // 基础路由
 
-      ...about, // 模块分离路由
+      // ...about, // 模块分离路由
   ]
 })
