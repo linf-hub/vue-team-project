@@ -21,9 +21,9 @@ export default {
     return {
       isRouterAlive: true,
       loginMsg: {
-        username: "",
-        password: "",
-        token: ""
+        username: '',
+        password: '',
+        token: ''
       }
     };
   },
@@ -37,11 +37,11 @@ export default {
     },
     login() {
       this.loginMsg = {
-        username: "abc",
-        password: "def",
-        token: "ghi"
+        username: 'abc',
+        password: 'def',
+        token: 'ghi'
       };
-      this.$store.commit("SET_LOGINMSG", this.loginMsg);
+      this.$store.commit('SET_LOGINMSG', this.loginMsg);
       this.$router.addRoutes(aboutRoute)
 
     }

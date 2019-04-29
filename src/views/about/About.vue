@@ -12,7 +12,7 @@
     data() {
       return {
         loginMsg: this.$store.state.loginMsg,
-        inputMsg: ""
+        inputMsg: ''
       }
     },
     methods: {
