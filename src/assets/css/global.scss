@@ -1,0 +1,128 @@
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote,
+pre, form, fieldset, table, th, td {
+  color: #333;
+  border: none;
+  // font-family:"微软雅黑","黑体","宋体";
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+  font-family: "FZLTHJW";
+  font-weight: 400;
+}
+section, article, main, footer, header {
+  display: block;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+a{
+  text-decoration: none;
+}
+img {
+  border: none;
+  width: 100%;
+  max-width: 100%;
+}
+input::-ms-clear{
+  display: none;
+}
+input::-ms-reveal{
+  display: none;
+}
+input{
+  -webkit-appearance: none;
+  margin: 0;
+  outline: none;
+  padding: 0;
+}
+input::-webkit-input-placeholder{
+  color: #999;
+}
+input::-ms-input-placeholder{
+  color: #999;
+}
+input::-moz-placeholder{
+  color: #999;
+}
+input[type=submit],input[type=button]{
+  cursor: pointer;
+}
+button[disabled], input[disabled] {
+  cursor: default;
+}
+input[type=text],
+select,
+textarea {
+  border: none;
+  border-radius: 0;
+}
+img{
+  border:none;
+}
+ul,ol,li{
+  list-style-type:none;
+}
+
+/* 快捷样式 */
+.clearfix{
+  clear: both;
+}
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.clearleft{
+  clear: left;
+}
+.clearright{
+  clear: right;
+}
+.floatleft{
+  float: left;
+}
+.floatright{
+  float: right;
+}
+.cursor{
+  cursor: pointer;
+}
+.text-center {
+  text-align: center;
+}
+.block {
+  display: block;
+  width: 100%;
+}
+
+.fs16 {
+  font-size: 16px;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.ml80 {
+  margin-left: 80px;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.mr80 {
+  margin-right: 80px;
+}
+
+.mb20 {
+  margin-bottom: 20px
+}

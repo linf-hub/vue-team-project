@@ -1,19 +1,19 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '../views/Home.vue'
-
-// import about from './about'
-
 Vue.use(Router);
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'home',
-      component: Home
+      path: '/login',
+      name: 'login',
+      component: () => import('@/views/login')
     }, // 基础路由
+    {
+      path: '/',
+      name: 'dashboard',
+      component: () => import('@/components/dashboard')
+    }
 
-      // ...about, // 模块分离路由
   ]
 })

@@ -1,0 +1,259 @@
+.wrapper {
+  background: #fff;
+  padding: 20px;
+}
+$button-blue: #0d8df0; // 按钮、操作（蓝色）
+.header_logo {
+  text-indent: -100000px;
+  background: url(../images/logo.png) left center no-repeat;
+  height: 100%;
+}
+.page_header {
+  width: 100%;
+  height: 60px;
+  background-color: #2e9ce4;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.page_sidebar {
+  width: 300px;
+  height: calc(100% - 70px);
+  background-color: #f2f2f2;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  box-shadow:1px 1px  2px 1px #d3d3d3;
+  overflow: hidden;
+}
+.main_height {
+  height: 100%;
+  background-color: #fff;
+}
+.page_main.el-main {
+  margin: 70px 0 0 310px;
+  padding: 0;
+}
+#app, .main, .el-container {
+  height: 100%;
+}
+#app {
+  font-family: "FZLTHJW";
+  // font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f5f5;
+}
+//通用样式
+.icon {
+  background: url(../images/icon.png) no-repeat;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.icon_user,
+.icon_password,
+.icon_plus {
+  width: 30px;
+  height: 30px;
+  left: 20px;
+  background-position: -2px -54px;
+}
+.icon_password {
+  background-position: -38px -54px;
+}
+.icon_back {
+  width: 16px;
+  height: 16px;
+  background-position: -56px -89px;
+  left: 4px;
+}
+.icon_plus {
+  background-position: -74px -54px;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+.icon_live,
+.icon_record {
+  background-position: -24px -90px;
+  width: 10px;
+  height: 10px;
+  left: 0;
+}
+.icon_live {
+  background-position: -40px -90px;
+}
+.form .el-form-item__error {
+  font-size: 14px;
+}
+.form .el-form-item,
+.form .el-row,
+.form .el-input {
+  margin-bottom: 0;
+}
+.form .el-form-item__content {
+  line-height: 100%;
+}
+.form .el-form-item {
+  margin-bottom: 20px;
+}
+.form .el-button {
+  border-radius: 0;
+  font-size: 16px;
+}
+.form .el-button--primary {
+  background: $button-blue;
+}
+.border input,
+.border select,
+.border textarea,
+.border .el-checkbox__inner {
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+.form .el-range-input,
+.form .el-form-item__label,
+.form .el-checkbox__label {
+  font-size: 16px;
+}
+.form_block .el-select {
+  display: block;
+}
+.form .el-date-editor {
+  width: 100%;
+  border-color: #ccc;
+  font-size: 16px;
+}
+.form_block .el-form-item {
+  padding-right: 16px;
+}
+.table th, .table td {
+  padding: 6px 0;
+  text-align: center;
+}
+.table th {
+  background: #d9e1e8;
+}
+.table .el-table__empty-block,
+.table .el-table__empty-text {
+  min-height: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+.pagination {
+  padding-top: 16px;
+  text-align: center;
+}
+.pagination.is-background .btn-prev, 
+.pagination.is-background .btn-next, 
+.pagination.is-background .el-pager li {
+  background-color: transparent;
+  border: 1px solid #999;
+  font-weight: normal;
+}
+.pagination.is-background .btn-prev:disabled, 
+.pagination.is-background .btn-next:disabled {
+  color: #ccc;
+  border-color: #ccc;
+}
+.pagination.is-background .el-pager li:not(.disabled).active {
+  background: $button-blue;
+  border-color: $button-blue;
+}
+.btn_link {
+  border-color: $button-blue;
+  color: $button-blue;
+}
+.btn_small {
+  height: 34px;
+  padding: 0 14px;
+  line-height: 34px;
+  font-size: 16px;
+}
+.btn_normal {
+  height: 40px;
+}
+.back {
+  color: #0d8df0;
+  font-weight: bold;
+  position: relative;
+  padding-left: 18px;
+  line-height: 18px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+// 弹窗
+.modal_frame .el-dialog__header {
+  padding: 15px 0 15px 50px;
+  background-color: #dbe6f0;
+  font-size: 20px;
+}
+
+.modal_frame .el-dialog__title {
+  color: #222222;
+}
+
+.modal_frame .el-dialog__body {
+  padding: 40px 50px 20px;
+}
+
+.modal_frame .el-dialog__footer {
+  padding: 0 50px 40px;
+  text-align: center;
+}
+.modal_frame .el-form-item {
+  margin-bottom: 20px;
+}
+.modal_frame .el-form-item__label {
+  font-size: 16px;
+}
+.modal_frame .el-input,
+.modal_frame .el-select,
+.modal_frame .el-textarea {
+  width: 300px;
+}
+.modal_frame input,
+.modal_frame textarea {
+  border: 1px solid #ccc;
+}
+.modal_frame .el-button {
+  font-size: 16px;
+  padding: 11px 17px;
+  border-radius: 0;
+}
+
+// 操作
+.operate {
+  cursor: pointer;
+  margin: 0 8px;
+  white-space: nowrap;
+}
+.color_blue {
+  color: $button-blue;
+}
+.color_orange {
+  color: #f79310;
+}
+.color_red {
+  color: #ee1414;
+}
+.title {
+  font-size: 24px;
+  position: relative;
+  font-weight: normal;
+  padding-left: 8px;
+  margin-bottom: 16px;
+}
+.title::before {
+  content: "";
+  display: block;
+  width: 0;
+  border: 2px solid #2e9ce4;
+  position: absolute;
+  top: 6px;
+  bottom: 4px;
+  left: 0;
+}

@@ -13,6 +13,7 @@ export default new Vuex.Store({
   },
   mutations: {
     SET_LOGINMSG(state,loginMsg) {
+      sessionStorage.setItem('user', JSON.stringify(loginMsg))
       state.loginMsg = loginMsg;
     }
   },
