@@ -16,6 +16,8 @@ import './assets/css/common.scss'
 Vue.prototype.$VPCF = VPCF
 Vue.prototype.$API = API
 
+Vue.config.devtools = true
+
 Vue.config.productionTip = false
 
 // 防止刷新丢失

@@ -50,12 +50,13 @@ export default {
   },
   methods: {
     login() {
-      this.$API.login({
-        username: "15855885588",
-        password: "885588"
-      }).then(res => {
-        sessionStorage.setItem("user",JSON.stringify(res.data.result));
-      });
+      this.$store.commit('SET_LOGINMSG',this.formData)
+      // this.$API.login({
+      //   username: "15855885588",
+      //   password: "885588"
+      // }).then(res => {
+      //   sessionStorage.setItem("user",JSON.stringify(res.data.result));
+      // });
       sessionStorage.setItem("menuDatas",JSON.stringify(analogDatas.menuDatas));
       
       let routes = [];

@@ -39,6 +39,7 @@ export default {
         center: true
       }).then(() => {
         sessionStorage.clear();
+        this.$router.push('/login')
       }, () => {});
     }
   }

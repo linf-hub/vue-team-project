@@ -8,5 +8,12 @@ module.exports = {
         changOrigin: true //开启代理
       }
     }
-  }
+  },
+  css: {
+		loaderOptions: {
+			sass: {
+				data: `@import "@/assets/style/common/variables.scss";`
+			}
+		}
+	}
 }
